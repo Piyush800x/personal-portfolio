@@ -1,27 +1,20 @@
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "./ui/card";
-import {
-  Terminal,
-  Server,
-  Database,
-  Code,
-  Github,
-  Linkedin,
-  Mail,
-  FileText,
-  ChevronRight,
-} from "lucide-react";
+import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
+import { Server, Database, Code, ChevronRight } from "lucide-react";
+import { Source_Code_Pro } from "next/font/google";
+import { Sora } from "next/font/google";
+
+const sourceCodePro = Source_Code_Pro({ subsets: ["latin"] });
+const sora = Sora({ subsets: ["latin"] });
 
 export default async function Skills() {
   return (
-    <section id="skills" className="container mx-auto px-4 py-20">
-      <div className="font-mono text-sm text-green-500 mb-4">
+    <section
+      id="skills"
+      className={`${sora.className} container mx-auto px-4 py-20`}
+    >
+      <div
+        className={`${sourceCodePro.className} font-mono text-sm text-green-500 mb-4`}
+      >
         $ ls -la ./skills
       </div>
       <h2 className="text-3xl font-bold text-white mb-12">
@@ -38,15 +31,11 @@ export default async function Skills() {
             <ul className="space-y-2 text-gray-400">
               <li className="flex items-center">
                 <ChevronRight className="h-4 w-4 text-green-500 mr-2" />
-                Node.js & Express
-              </li>
-              <li className="flex items-center">
-                <ChevronRight className="h-4 w-4 text-green-500 mr-2" />
                 Python & Django/Flask
               </li>
               <li className="flex items-center">
                 <ChevronRight className="h-4 w-4 text-green-500 mr-2" />
-                Java Spring Boot
+                Node.js & Express
               </li>
               <li className="flex items-center">
                 <ChevronRight className="h-4 w-4 text-green-500 mr-2" />
@@ -75,10 +64,6 @@ export default async function Skills() {
                 <ChevronRight className="h-4 w-4 text-green-500 mr-2" />
                 Redis & Caching Strategies
               </li>
-              <li className="flex items-center">
-                <ChevronRight className="h-4 w-4 text-green-500 mr-2" />
-                Database Optimization
-              </li>
             </ul>
           </CardContent>
         </Card>
@@ -95,10 +80,6 @@ export default async function Skills() {
               <li className="flex items-center">
                 <ChevronRight className="h-4 w-4 text-green-500 mr-2" />
                 Docker & Containerization
-              </li>
-              <li className="flex items-center">
-                <ChevronRight className="h-4 w-4 text-green-500 mr-2" />
-                Kubernetes Orchestration
               </li>
               <li className="flex items-center">
                 <ChevronRight className="h-4 w-4 text-green-500 mr-2" />
