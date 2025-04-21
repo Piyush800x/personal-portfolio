@@ -1,4 +1,11 @@
-import { Github, Linkedin, Mail, Terminal } from "lucide-react";
+import {
+  Github,
+  Linkedin,
+  Mail,
+  Terminal,
+  LucideHeart,
+  LucideCoffee,
+} from "lucide-react";
 
 export default async function Footer() {
   return (
@@ -8,7 +15,7 @@ export default async function Footer() {
           <div className="flex items-center space-x-2 mb-4 md:mb-0">
             <Terminal className="h-5 w-5 text-green-500" />
             <span className="font-mono text-sm text-white">
-              © {new Date().getFullYear()} | Built with Next.js
+              © {new Date().getFullYear()} | Built with ♥️ & ☕︎
             </span>
           </div>
           <div className="flex space-x-4">

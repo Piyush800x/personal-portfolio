@@ -9,7 +9,7 @@ import Terminal from "@/components/terminal";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-black text-gray-300">
+    <div className="min-h-screen sm:mx-12 text-gray-300">
       {/* Navbar */}
       <Header />
       <main>

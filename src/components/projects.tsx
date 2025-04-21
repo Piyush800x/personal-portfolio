@@ -9,17 +9,27 @@ import {
 import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
 import { Github } from "lucide-react";
+import { Source_Code_Pro } from "next/font/google";
+import { Sora } from "next/font/google";
+
+const sourceCodePro = Source_Code_Pro({ subsets: ["latin"] });
+const sora = Sora({ subsets: ["latin"] });
 
 export default async function Projects() {
   return (
-    <section id="projects" className="container mx-auto px-4 py-20 bg-gray-950">
-      <div className="font-mono text-sm text-green-500 mb-4">
+    <section
+      id="projects"
+      className={`${sora.className} container mx-auto px-4 py-20`}
+    >
+      <div
+        className={`${sourceCodePro.className} font-mono text-sm text-green-500 mb-4`}
+      >
         $ cd ./projects
       </div>
       <h2 className="text-3xl font-bold text-white mb-12">Featured Projects</h2>
 
       <div className="grid md:grid-cols-2 gap-8">
-        <Card className="bg-gray-900 border-gray-800">
+        <Card className="bg-[#172024] border-gray-800">
           <CardHeader>
             <CardTitle className="text-white">
               Distributed Task Queue System
@@ -44,12 +54,11 @@ export default async function Projects() {
           <CardFooter className="flex justify-between">
             <Button
               variant="outline"
-              className="border-green-500 text-green-500 hover:bg-green-950"
+              size="lg"
+              className="bg-green-600 hover:bg-transparent hover:border-green-700 hover:text-green-500 text-black border-green-600"
             >
-              View Details
-            </Button>
-            <Button variant="ghost" className="text-gray-400 hover:text-white">
               <Github className="h-5 w-5" />
+              View Details
             </Button>
           </CardFooter>
         </Card>

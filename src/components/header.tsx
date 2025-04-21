@@ -50,9 +50,10 @@ export default async function Header() {
         </nav>
         <Button
           variant="outline"
-          className="bg-green-600 hover:bg-green-700 hover:border-green-700 text-black border-green-600"
+          size="lg"
+          className="bg-green-600 hover:bg-[#0B1215] hover:border-green-700 hover:text-green-500 text-black border-green-600"
         >
-          <ArrowDownToLine className="mr-2 h-4 w-4" />
+          <ArrowDownToLine className="mr-0 h-4 w-4" />
           Resume
         </Button>
       </div>

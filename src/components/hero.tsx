@@ -27,12 +27,17 @@ export default async function Hero() {
           design, and secure architecture.
         </p>
         <div className="flex flex-wrap gap-4">
-          <Button className="bg-green-600 hover:bg-green-700 text-black">
+          <Button
+            variant="outline"
+            size="lg"
+            className="bg-green-600 hover:bg-[#0B1215] hover:border-green-700 hover:text-green-500 text-black border-green-600"
+          >
             View My Projects <ChevronRight className="ml-2 h-4 w-4" />
           </Button>
           <Button
             variant="outline"
-            className="bg-green-600 hover:bg-green-700 hover:border-green-700 text-black border-green-600"
+            size="lg"
+            className="bg-white hover:bg-white/80 text-black"
           >
             Contact Me
           </Button>

@@ -22,7 +22,7 @@ export default async function Skills() {
       </h2>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <Card className="bg-gray-900 border-gray-800">
+        <Card className="bg-[#172024] border-gray-800">
           <CardHeader>
             <Server className="h-8 w-8 text-blue-500 mb-2" />
             <CardTitle className="text-white">Backend Development</CardTitle>
@@ -45,7 +45,7 @@ export default async function Skills() {
           </CardContent>
         </Card>
 
-        <Card className="bg-gray-900 border-gray-800">
+        <Card className="bg-[#172024] border-gray-800">
           <CardHeader>
             <Database className="h-8 w-8 text-purple-500 mb-2" />
             <CardTitle className="text-white">Database Systems</CardTitle>
@@ -68,7 +68,7 @@ export default async function Skills() {
           </CardContent>
         </Card>
 
-        <Card className="bg-gray-900 border-gray-800">
+        <Card className="bg-[#172024] border-gray-800">
           <CardHeader>
             <Code className="h-8 w-8 text-yellow-500 mb-2" />
             <CardTitle className="text-white">
