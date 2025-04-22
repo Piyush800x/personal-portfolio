@@ -1,12 +1,13 @@
-import { Button } from "./ui/button";
+"use client";
 import { Github, Linkedin, Mail } from "lucide-react";
 import { Source_Code_Pro } from "next/font/google";
 import { Sora } from "next/font/google";
+import ContactFormClient from "./contact/contact-form";
 
 const sourceCodePro = Source_Code_Pro({ subsets: ["latin"] });
 const sora = Sora({ subsets: ["latin"] });
 
-export default async function Contact() {
+export default function Contact() {
   return (
     <section
       id="contact"
@@ -63,50 +64,7 @@ export default async function Contact() {
         {/* Form */}
         <div className="bg-[#172024] p-6 rounded-lg border border-gray-800 sm:w-2/4">
           <h3 className="text-white font-bold mb-4">Send a Message</h3>
-          <form className="space-y-4">
-            <div>
-              <label
-                htmlFor="name"
-                className="block text-sm font-medium text-gray-400 mb-1"
-              >
-                Name
-              </label>
-              <input
-                type="text"
-                id="name"
-                className="w-full px-3 py-2 bg-gray-800 border border-gray-700 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-green-500"
-              />
-            </div>
-            <div>
-              <label
-                htmlFor="email"
-                className="block text-sm font-medium text-gray-400 mb-1"
-              >
-                Email
-              </label>
-              <input
-                type="email"
-                id="email"
-                className="w-full px-3 py-2 bg-gray-800 border border-gray-700 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-green-500"
-              />
-            </div>
-            <div>
-              <label
-                htmlFor="message"
-                className="block text-sm font-medium text-gray-400 mb-1"
-              >
-                Message
-              </label>
-              <textarea
-                id="message"
-                rows={4}
-                className="w-full px-3 py-2 bg-gray-800 border border-gray-700 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-green-500"
-              ></textarea>
-            </div>
-            <Button className="w-full bg-green-600 hover:bg-green-700 text-white">
-              Send Message
-            </Button>
-          </form>
+          <ContactFormClient />
         </div>
       </div>
     </section>

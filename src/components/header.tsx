@@ -1,3 +1,4 @@
+"use server";
 import Link from "next/link";
 import { Terminal, FileText } from "lucide-react";
 import { Button } from "./ui/button";

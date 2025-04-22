@@ -1,3 +1,4 @@
+"use server";
 import { ChevronRight } from "lucide-react";
 import { Source_Code_Pro } from "next/font/google";
 import { Sora } from "next/font/google";

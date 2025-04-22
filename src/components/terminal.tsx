@@ -1,3 +1,4 @@
+"use server";
 import { Badge } from "./ui/badge";
 import { Source_Code_Pro } from "next/font/google";
 

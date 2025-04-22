@@ -1,3 +1,4 @@
+"use server";
 import { Button } from "./ui/button";
 import { ChevronRight } from "lucide-react";
 import { Source_Code_Pro } from "next/font/google";

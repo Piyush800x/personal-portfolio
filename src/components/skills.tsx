@@ -1,3 +1,4 @@
+"use server";
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 import { Server, Database, Code, ChevronRight } from "lucide-react";
 import { Source_Code_Pro } from "next/font/google";
